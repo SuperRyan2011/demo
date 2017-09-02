@@ -6,6 +6,7 @@
 #nmcli device show enp0s3 | awk 'NR==3'
 #bash ip.sh enp0s3 10.0.2.18 255.255.255.0 10.0.2.2
 #bash ip.sh enp0s8 192.168.56.104 255.255.255.0 192.168.56.1 dg
+# -z $a 表示$a 长度是否为0，从而判断是否为空值
 
 if [ -z "$1" == "" ];then
     echo "1 is empty.example:ip.sh eth0 192.168.1.10 255.255.255.0 192.168.1.1"
